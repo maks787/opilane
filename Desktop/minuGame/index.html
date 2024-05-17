@@ -1,59 +1,114 @@
 <!DOCTYPE html>
 <html lang="et">
-<!--tehniline info-->
-	<head>
-		<title>TARpv22 konfliktiLeht</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-<!--veebilehe sisu-->	
-	<body>
- <h1>Ülesanne:</h1>
-    <br>
-    Sellele lehele, igaüks kes ennast kirja on pannud, kirjutab ühe lehe sektsiooni </br>
-    oma lemmikmängust. Mida selle mängu kohta kirjutada:</br>
+<head>
+    <meta charset="UTF-8">
+    <title>TARpv22 konfliktiLeht</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Дополнительные стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Светло-серый */
+        }
+
+        h1, h2 {
+            color: DarkSlateGray; /* Темный грифельный серый */
+            margin-top: 20px; /* Отступ сверху */
+            margin-bottom: 10px; /* Отступ снизу */
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        p, ul {
+            color: DimGray; /* Тускло-серый */
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px; /* Отступ снизу */
+        }
+
+        footer {
+            background-color: DimGray;
+            color: White;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+        }
+
+        #content {
+            padding: 20px; /* Отступ внутри содержимого */
+        }
+
+        #title-screen, #story, #gameplay, #links, #review, #video {
+            background-color: White;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Ülesanne:</h1>
+    <p>Sellele lehele, igaüks kes ennast kirja on pannud, kirjutab ühe lehe sektsiooni oma lemmikmängust.</p>
+    <p>Mida selle mängu kohta kirjutada:</p>
     <ul>
         <li>Mängu nimi</li>
         <li>Platvorm, väljalaskeaeg, muu info, lühike sisututvustus</li>
         <li>Title screeni pilt</li>
-        <li>paragrahv millest mängu story räägib (pane pilte vastavalt storyle juurde)</li>
-        <li>paragrahv mis räägib mängu gameplayst (pane pilte vastavalt gameplay kirjeldusele juurde)</li>
+        <li>Paragrahv millest mängu story räägib (pane pilte vastavalt storyle juurde)</li>
+        <li>Paragrahv mis räägib mängu gameplayst (pane pilte vastavalt gameplay kirjeldusele juurde)</li>
         <li>Mängu jaoks erinevaid linke</li>
         <li>Iga õpilase sektsioon kasutab eraldi stiilifaili, stiili saab juurde panna id-ga</li>
         <li>Iga 10 minuti tagant teevad kõik uue commiti.</li>
         <li>Kirjuta omasõnadega arvustus oma valitud mängust.(platvormivõrdlus kirjutada ka sisse, kui mäng on multiplat)</li>
-        <li>Embeddi kommentaarideta youtubi video mängust</li>
+        <li>Embeddi kommentaarideta YouTube video mängust</li>
     </ul>
-	<footer>
-		<p>Kontakt: irina.merkulova()tthk.ee</p>
-		I.M. &copy; 2024
-	</footer>
-	</body>
-    <h1>Minu lemmik mäng</h1>
-    <li>Dota 2</li>
-     <li>Platvorm - PC, väljaskeaeg - 9 juuli 2013, lühike sisututvustus - Dota 2 on online-multiplayer-areenamäng, kus kaks viieliikmelist meeskonda võitlevad omavahel, kaitstes oma baase ja püüdes hävitada vastase baasi.</li>
-<div id="title-screen">
-    <h2>Avaleht</h2>
-    <img src="dota.jpg" alt="Dota 2 Title Screen">
+</header>
+<div id="content">
+    <section id="dota2">
+        <h2>Minu lemmik mäng</h2>
+        <ul>
+            <li>Dota 2</li>
+            <li>Platvorm - PC, väljalaskeaeg - 9 juuli 2013, lühike sisututvustus - Dota 2 on online-multiplayer-areenamäng, kus kaks viieliikmelist meeskonda võitlevad omavahel, kaitstes oma baase ja püüdes hävitada vastase baasi.</li>
+        </ul>
+    </section>
+    <section id="title-screen">
+        <h2>Avaleht</h2>
+        <img src="dota.jpg" alt="Dota 2 Title Screen">
+    </section>
+    <section id="story">
+        <h2>Dota 2</h2>
+        <p>Dota 2 põhineb Warcraft III modifikatsioonil nimega Defence of the Ancients (DotA). Mängus on erinevaid kangelasi, kellel kõigil on oma unikaalne ajalugu ja võimed. Mängumaailm sisaldab palju müüte ja legende ning tegelased on pärit erinevatest maailmadest ja ajastutest.</p>
+        <img src="hero.png" alt="Kõik mängitavad tegelased, kõik erineva mehaanika, võimete, välimusega">
+    </section>
+    <section id="gameplay">
+        <h2>Dota 2 gameplay</h2>
+        <p>Siin näete, et seal on kangelased, teie liitlased, esemed, mida me ostame mängus, kuld vaja osta esemeid, kaart, hooned, mis tuleb lammutada, et võita</p>
+        <img src="gameplay.jpg" alt="Dota 2 gameplay">
+    </section>
+    <section id="links">
+        <h2>Erinevaid linke</h2>
+        <a href="https://www.dota2.com/home" style="color: RoyalBlue;">Peamine Dota sait</a><br>
+        <a href="https://store.steampowered.com/app/570/Dota_2/" style="color: RoyalBlue;">Dota on steam</a>
+    </section>
+    <section id="review">
+        <h2>Mängust Dota 2</h2>
+        <p>Dota 2 on populaarne MOBA mäng, kus kaks meeskonda võitlevad, et hävitada vastase baas. Mäng pakub üle 100 erineva kangelase, igaühel oma unikaalsed võimed. Graafika ja helikujundus on muljetavaldavad, ning mäng on saadaval mitmel platvormil, sealhulgas PC, Mac ja Linux. Dota 2 on suurepärane valik neile, kes otsivad sügavat strateegiat ja põnevaid võitlusi.</p>
+    </section>
+    <section id="video">
+        <h2>YouTube video mängust Dota 2</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k1BFkWbV06o?si=jzpPpA8C-IDGCbR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 </div>
-<div id="story">
-    <h2>Dota 2</h2>
-    <p>Dota 2 põhineb Warcraft III modifikatsioonil nimega Defence of the Ancients (DotA). Mängus on erinevaid kangelasi, kellel kõigil on oma unikaalne ajalugu ja võimed. Mängumaailm sisaldab palju müüte ja legende ning tegelased on pärit erinevatest maailmadest ja ajastutest.</p>
 
-    <img src="hero.png" alt="Kõik mängitavad tegelased, kõik erineva mehaanika, võimete, välimusega">
-</div>
-<div id="gameplay">
-    <h2>Dota 2 gameplay</h2>
-    <p>Siin näete, et seal on kangelased, teie liitlased, esemed, mida me ostame mängus, kuld vaja osta esemeid, kaart, hooned, mis tuleb lammutada, et võita</p>
-    <img src="gameplay.jpg" >
-
-</div>
-<div>
-<h2>Erinevaid linke</h2>
-    <a href="https://www.dota2.com/home">See on peamine dota sait</a>
-    <a href="https://store.steampowered.com/app/570/Dota_2/">See on dota on steam</a>
-</div>
-
-
+</body>
 </html>
-
